@@ -20,8 +20,8 @@ public class ProducerService {
         return producerRepository.save(producer);
     }
 
-    public void delete(Producer producer){
-        producerRepository.delete(producer);
+    public void deleteById(Long id){
+        producerRepository.deleteById(id);
     }
 
     public Producer update(Producer producer, Long id){
