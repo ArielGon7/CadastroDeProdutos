@@ -1,5 +1,6 @@
 package com.devariel.cadastro_de_produto.service;
 
+import com.devariel.cadastro_de_produto.exception.ResourceNotFoundException;
 import com.devariel.cadastro_de_produto.model.Producer;
 import com.devariel.cadastro_de_produto.repository.ProducerRepository;
 import lombok.RequiredArgsConstructor;
@@ -16,11 +17,19 @@ public class ProducerService {
         return producerRepository.findAll();
     }
 
+    public Producer findById(Long id){
+        return producerRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Producer with id "+id+ "not found"));
+    }
+
     public Producer save(Producer producer){
         return producerRepository.save(producer);
     }
 
     public void deleteById(Long id){
+
+        if (!producerRepository.existsById(id)){
+            throw new ResourceNotFoundException("Producer with id "+id+ "not found");
+        }
         producerRepository.deleteById(id);
     }
 
