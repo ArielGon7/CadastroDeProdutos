@@ -32,7 +32,7 @@ public class AuthController {
     public ResponseEntity<?> login(@RequestBody Map<String, String> request){
         Optional<User> user = userService.findByUsername(request.get("username"));
         if(user.isPresent() && user.get().getPassword().equals(request.get("password"))){
-            String token = JwtUtil.generatyToken(user.get().getUsername());
+            String token = JwtUtil.generateToken(user.get().getUsername());
             return ResponseEntity.ok(Map.of("token", token));
         }
         return ResponseEntity.status(401).body("invalid credentials");
