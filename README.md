@@ -35,12 +35,14 @@ Remover produtor (DELETE /producer/{id})
 
 Todas as rotas de produtor exigem token JWT — nada de acesso sem autorização.
 
-🛠️ Tecnologias utilizadas
-Camada	Tecnologia
-Linguagem	Java 21
-Framework	Spring Boot 
-Segurança	Spring Security + JWT
-Persistência	Spring Data JPA
-Banco de dados	PostgreSQL
-Utilitários	Lombok
-Gerenciador	Gradle
+## 🔒 Tecnologias utilizadas
+
+| Camada | Tecnologia |
+|--------|-------------|
+| Linguagem | Java 21 |
+| Framework | Spring Boot |
+| Segurança | Spring Security + JWT |
+| Persistência | Spring Data JPA |
+| Banco de dados | PostgreSQL |
+| Utilitários | Lombok |
+| Gerenciador | Gradle |
