@@ -12,7 +12,7 @@ Este projeto consiste em uma API REST para cadastro e gerenciamento de produtore
 
 * Autenticação stateless usando Spring Security
 
-O objetivo vai além do básico: simula um sistema real onde apenas usuários autenticados podem manipular dados, com diferenciação clara entre rotas públicas e privadas.
+Simula um sistema real onde apenas usuários autenticados podem manipular dados, com diferenciação clara entre rotas públicas e privadas.
 
 ⚙️ Funcionalidades
 Autenticação 
