@@ -4,7 +4,7 @@ API completa de gerenciamento de produtores com autenticação JWT, seguindo pad
 📋 Sobre o projeto
 Este projeto consiste em uma API REST para cadastro e gerenciamento de produtores, desenvolvida com foco em:
 
-* Segurança real com JWT
+* Segurança com JWT
 
 * Arquitetura limpa
 
